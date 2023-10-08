@@ -1,0 +1,355 @@
+* {
+
+    /* outline: 1px solid red; */
+  
+    margin: 0;
+  
+    padding: 0;
+  
+    box-sizing: border-box;
+  
+  }
+  
+   
+  
+  :root {
+  
+    font-size: 18px;
+  
+    --red: 0, 100%, 67%;
+  
+    --yellow: 39, 100%, 56%;
+  
+    --green: 166, 100%, 37%;
+  
+    --blue: 234, 85%, 45%;
+  
+  }
+  
+   
+  
+  body {
+  
+    min-height: 100vh;
+  
+    display: flex;
+  
+    justify-content: center;
+  
+    align-items: center;
+  
+   
+  
+    font-family: "Hanken Grotesk", sans-serif;
+  
+   
+  
+    background-color: #eee;
+  
+  }
+  
+   
+  
+  #vorlage {
+  
+    position: absolute;
+  
+    z-index: -1;
+  
+    /* opacity: 50%; */
+  
+  }
+  
+   
+  
+  .card {
+  
+    display: flex;
+  
+   
+  
+    border-radius: 35px;
+  
+    overflow: hidden;
+  
+    background-color: white;
+  
+    box-shadow: 10px 5px 20px 5px hsla(0, 0%, 0%, 0.3);
+  
+  }
+  
+   
+  
+  .card-right {
+  
+    padding: 0 40px;
+  
+    display: flex;
+  
+    flex-direction: column;
+  
+    justify-content: center;
+  
+    gap: 40px;
+  
+  }
+  
+   
+  
+  .card-left,
+  
+  .card-right {
+  
+    width: 370px;
+  
+    height: 510px;
+  
+  }
+  
+   
+  
+  .card-left {
+  
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  
+   
+  
+    display: flex;
+  
+    flex-direction: column;
+  
+    justify-content: center;
+  
+    align-items: center;
+  
+    gap: 35px;
+  
+   
+  
+    text-align: center;
+  
+    color: white;
+  
+   
+  
+    padding: 0 60px;
+  
+    background-color: white;
+  
+  }
+  
+   
+  
+  .score {
+  
+    height: 200px;
+  
+    aspect-ratio: 1;
+  
+    border-radius: 50%;
+  
+   
+  
+    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+  
+   
+  
+    display: flex;
+  
+    flex-direction: column;
+  
+    justify-content: center;
+  
+  }
+  
+   
+  
+  .score-value {
+  
+    font-size: 4rem;
+  
+  }
+  
+   
+  
+  .great {
+  
+    margin-bottom: 15px;
+  
+    font-size: 1.7rem;
+  
+    font-weight: 700;
+  
+    letter-spacing: 1px;
+  
+  }
+  
+   
+  
+  .result {
+  
+    font-size: 1.3rem;
+  
+  }
+  
+   
+  
+  .single-value {
+  
+    display: flex;
+  
+    align-items: center;
+  
+    height: 55px;
+  
+    padding: 0 15px;
+  
+    gap: 10px;
+  
+    border-radius: 10px;
+  
+  }
+  
+   
+  
+  .values {
+  
+    display: flex;
+  
+    justify-content: center;
+  
+    flex-direction: column;
+  
+    gap: 15px;
+  
+  }
+  
+   
+  
+  .continue {
+  
+    width: 100%;
+  
+    background: #303b59;
+  
+    color: white;
+  
+    border: none;
+  
+    height: 55px;
+  
+    border-radius: 35px;
+  
+    font-size: 1rem;
+  
+    cursor: pointer;
+  
+    transition: all 0.4s;
+  
+  }
+  
+   
+  
+  .continue:hover {
+  
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  
+  }
+  
+   
+  
+  .single-value-sorce {
+  
+    margin-left: auto;
+  
+    color: hsl(224, 30%, 27%);
+  
+  }
+  
+   
+  
+  .single-value-sorce > span {
+  
+    font-weight: 800;
+  
+  }
+  
+   
+  
+  .summary {
+  
+    color: #303b59;
+  
+    font-size: 1.4rem;
+  
+    font-weight: 700;
+  
+  }
+  
+  .red {
+  
+    color: hsl(var(--red));
+  
+    background-color: hsla(var(--red), 0.2);
+  
+  }
+  
+   
+  
+  .yellow {
+  
+    color: hsl(var(--yellow));
+  
+    background-color: hsla(var(--yellow), 0.2);
+  
+  }
+  
+   
+  
+  .green {
+  
+    color: hsl(var(--green));
+  
+    background-color: hsla(var(--green), 0.2);
+  
+  }
+  
+   
+  
+  .blue {
+  
+    color: hsl(var(--blue));
+  
+    background-color: hsla(var(--blue), 0.2);
+  
+  }
+  
+   
+  
+  .result,
+  
+  .text {
+  
+    color: hsla(0, 100%, 100%, 0.6);
+  
+  }
+  
+   
+  
+  @media (max-width: 992px) {
+  
+    .card {
+  
+      flex-direction: column;
+  
+    }
+  
+  }
+  
+   
+  
+  p {
+  
+    font-size: 4rem;
+  
+  }
